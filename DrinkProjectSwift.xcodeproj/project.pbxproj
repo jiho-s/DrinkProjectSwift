@@ -16,6 +16,7 @@
 		130565FB244D941D0015BC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130565F9244D941D0015BC2B /* LaunchScreen.storyboard */; };
 		13056604244D99E20015BC2B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056603244D99E20015BC2B /* SettingView.swift */; };
 		13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056608244DA0D40015BC2B /* ProfileImage.swift */; };
+		136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A8533244EB48C00DC33B8 /* ToggleRowView.swift */; };
 		137B680F244E7FDF0022E00F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B680E244E7FDF0022E00F /* HomeView.swift */; };
 		137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B6810244E85AC0022E00F /* RectangularButton.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		130565FC244D941D0015BC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13056603244D99E20015BC2B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		13056608244DA0D40015BC2B /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		136A8533244EB48C00DC33B8 /* ToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRowView.swift; sourceTree = "<group>"; };
 		137B680E244E7FDF0022E00F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		137B6810244E85AC0022E00F /* RectangularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				13056603244D99E20015BC2B /* SettingView.swift */,
+				136A8533244EB48C00DC33B8 /* ToggleRowView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				130565F1244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld in Sources */,
 				130565F3244D94170015BC2B /* ContentView.swift in Sources */,
 				130565EE244D94170015BC2B /* SceneDelegate.swift in Sources */,
+				136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

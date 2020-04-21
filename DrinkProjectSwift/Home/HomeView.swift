@@ -18,9 +18,10 @@ struct HomeView: View {
             .edgesIgnoringSafeArea(.all)
             VStack {
                 Image("default")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 150, height: 150)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150, height: 150)
+                    .padding(100)
                 RectangularButton(title: "오늘 마신 술 잔으로 추가하기", isOn: self.$showingTodaySheet)
                 .sheet(isPresented: $showingTodaySheet){
                     Text("dd")

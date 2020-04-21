@@ -12,14 +12,18 @@ struct RectangularButton: View {
     let title: String
     @Binding var isOn: Bool
     var body: some View {
-        Button(title){
+        Button(action: {
             self.isOn.toggle()
+            
+        }){
+            Text(title)
+                .font(.headline)
         }
         .padding()
         .frame(width: 300.0)
         .background(Color.init(red: 237/255, green: 237/255, blue: 237/255))
         .foregroundColor(.black)
-        .clipShape(Rectangle())
+        .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(10)
         //.shadow(radius: isOn ? 0 : 5)
     }
