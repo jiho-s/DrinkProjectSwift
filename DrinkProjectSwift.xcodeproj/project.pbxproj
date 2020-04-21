@@ -14,6 +14,10 @@
 		130565F5244D941D0015BC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130565F4244D941D0015BC2B /* Assets.xcassets */; };
 		130565F8244D941D0015BC2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130565F7244D941D0015BC2B /* Preview Assets.xcassets */; };
 		130565FB244D941D0015BC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130565F9244D941D0015BC2B /* LaunchScreen.storyboard */; };
+		13056604244D99E20015BC2B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056603244D99E20015BC2B /* SettingView.swift */; };
+		13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056608244DA0D40015BC2B /* ProfileImage.swift */; };
+		137B680F244E7FDF0022E00F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B680E244E7FDF0022E00F /* HomeView.swift */; };
+		137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B6810244E85AC0022E00F /* RectangularButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		130565F7244D941D0015BC2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		130565FA244D941D0015BC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		130565FC244D941D0015BC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13056603244D99E20015BC2B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		13056608244DA0D40015BC2B /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		137B680E244E7FDF0022E00F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		137B6810244E85AC0022E00F /* RectangularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,14 @@
 			children = (
 				130565EB244D94170015BC2B /* AppDelegate.swift */,
 				130565ED244D94170015BC2B /* SceneDelegate.swift */,
+				13056605244DA05A0015BC2B /* Models */,
+				13056607244DA07B0015BC2B /* SupportingVIews */,
+				137B680D244E7EFB0022E00F /* Home */,
+				137B680C244E7EF60022E00F /* Journal */,
+				137B680B244E7EF40022E00F /* Statistics */,
+				13056602244D95C90015BC2B /* Settings */,
+				137B680A244E7EF10022E00F /* Resources */,
+				137B6808244E7EEA0022E00F /* New Group */,
 				130565F2244D94170015BC2B /* ContentView.swift */,
 				130565F4244D941D0015BC2B /* Assets.xcassets */,
 				130565F9244D941D0015BC2B /* LaunchScreen.storyboard */,
@@ -76,6 +92,66 @@
 				130565F7244D941D0015BC2B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13056602244D95C90015BC2B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				13056603244D99E20015BC2B /* SettingView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		13056605244DA05A0015BC2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13056607244DA07B0015BC2B /* SupportingVIews */ = {
+			isa = PBXGroup;
+			children = (
+				13056608244DA0D40015BC2B /* ProfileImage.swift */,
+				137B6810244E85AC0022E00F /* RectangularButton.swift */,
+			);
+			path = SupportingVIews;
+			sourceTree = "<group>";
+		};
+		137B6808244E7EEA0022E00F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		137B680A244E7EF10022E00F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		137B680B244E7EF40022E00F /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		137B680C244E7EF60022E00F /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		137B680D244E7EFB0022E00F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				137B680E244E7FDF0022E00F /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				130565EC244D94170015BC2B /* AppDelegate.swift in Sources */,
+				137B680F244E7FDF0022E00F /* HomeView.swift in Sources */,
+				13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */,
+				13056604244D99E20015BC2B /* SettingView.swift in Sources */,
+				137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */,
 				130565F1244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld in Sources */,
 				130565F3244D94170015BC2B /* ContentView.swift in Sources */,
 				130565EE244D94170015BC2B /* SceneDelegate.swift in Sources */,
