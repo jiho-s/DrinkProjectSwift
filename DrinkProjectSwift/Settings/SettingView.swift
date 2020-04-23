@@ -60,8 +60,8 @@ struct SettingsView: View {
                 }
             }
             .background(LinearGradient.background)
-            .navigationBarTitle(Text("설정"), displayMode: .inline)
-            .navigationBarColor(.barColor)
+            .navigationBarTitle(Text("설정"), displayMode: .automatic)
+            //.navigationBarColor(.barColor)
         }
     }
     init(){

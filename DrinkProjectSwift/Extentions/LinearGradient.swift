@@ -9,6 +9,8 @@
 import SwiftUI
 
 extension LinearGradient {
-    public static let background = LinearGradient(gradient: Gradient(colors: [.back1, .bakc2]), startPoint: .topTrailing, endPoint: .bottomLeading)
+    public static let background = LinearGradient(gradient: Gradient(colors: [.back1, .back2]), startPoint: .topTrailing, endPoint: .bottomLeading)
+
+    
 }
 

@@ -27,6 +27,7 @@
 		1311D5D324512612007ECC0D /* RectangularNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5D224512612007ECC0D /* RectangularNavigationLink.swift */; };
 		1311D5D924513091007ECC0D /* RectangularToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5D824513091007ECC0D /* RectangularToggle.swift */; };
 		1311D5DB2451342A007ECC0D /* FieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5DA2451342A007ECC0D /* FieldModifier.swift */; };
+		1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5DC2451399B007ECC0D /* TabBarModifier.swift */; };
 		136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A8533244EB48C00DC33B8 /* ToggleRowView.swift */; };
 		137B680F244E7FDF0022E00F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B680E244E7FDF0022E00F /* HomeView.swift */; };
 		137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B6810244E85AC0022E00F /* RectangularButton.swift */; };
@@ -55,6 +56,7 @@
 		1311D5D224512612007ECC0D /* RectangularNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularNavigationLink.swift; sourceTree = "<group>"; };
 		1311D5D824513091007ECC0D /* RectangularToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularToggle.swift; sourceTree = "<group>"; };
 		1311D5DA2451342A007ECC0D /* FieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModifier.swift; sourceTree = "<group>"; };
+		1311D5DC2451399B007ECC0D /* TabBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModifier.swift; sourceTree = "<group>"; };
 		136A8533244EB48C00DC33B8 /* ToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRowView.swift; sourceTree = "<group>"; };
 		137B680E244E7FDF0022E00F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		137B6810244E85AC0022E00F /* RectangularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularButton.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */,
 				1311D5DA2451342A007ECC0D /* FieldModifier.swift */,
+				1311D5DC2451399B007ECC0D /* TabBarModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				130565EC244D94170015BC2B /* AppDelegate.swift in Sources */,
 				1311D5B9244FDAC2007ECC0D /* BackGround.swift in Sources */,
 				1311D5D924513091007ECC0D /* RectangularToggle.swift in Sources */,
+				1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */,
 				1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */,
 				1311D5BD244FDED2007ECC0D /* Color.swift in Sources */,
 				1311D5CF245039BB007ECC0D /* SectionTitle.swift in Sources */,

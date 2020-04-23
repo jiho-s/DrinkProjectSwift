@@ -15,4 +15,8 @@ extension View {
     func fieldStyle() -> some View {
         self.modifier(FieldModifier())
     }
+    
+    func tabBarColor() -> some View {
+        self.modifier(TabBarModifier())
+    }
 }
