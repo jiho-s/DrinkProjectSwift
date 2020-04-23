@@ -11,46 +11,59 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         NavigationView {
-            
             Form {
-                Section(header: Text("사용자 정보")
-                    .font(.headline)
-                ) {
-                    NavigationLink(destination: Text("ss")){
+                Section(header: SectionTitle("사용자 정보")) {
+                    RectangularNavigationLink(destination: Text("ss")){
                         Text("사용자")
                     }
-                    NavigationLink(destination: Text("ss")){
+                    RectangularNavigationLink(destination: Text("ss")){
                         Text("친구 관리")
                     }
                 }
-                
-                Section(header: Text("기본 설정")
-                    .font(.headline)
-                ) {
+
+
+                Section(header: SectionTitle("기본 설정")) {
                     ToggleRowView(title: "자동 로그인", isOn: .constant(true))
-                    
+                    ToggleRowView(title: "알림", isOn: .constant(true))
+
                 }
 
-                Section(header: Text("데이터 관리")
-                    .font(.headline)
-                ) {
-                    NavigationLink(destination: Text("ss")){
-                        Text("View")
+                Section(header: SectionTitle("데이터 관리")) {
+                    RectangularNavigationLink(destination: Text("ss")){
+                        Text("사용자 음주량 추가")
+                    }
+                    RectangularNavigationLink(destination: Text("ss")){
+                        Text("사용자 음주량 제거")
+                    }
+                    RectangularNavigationLink(destination: Text("ss")){
+                        Text("술 표시 순서 변경")
+                    }
+                    RectangularNavigationLink(destination: Text("ss")){
+                        Text("사용자 술 추가")
+                    }
+                    RectangularNavigationLink(destination: Text("ss")){
+                        Text("단위 선택")
                     }
                 }
-                
-                Section(header: Text("기타")
-                    .font(.headline)
-                ) {
-                    NavigationLink(destination: Text("ss")){
-                        Text("View")
+
+                Section(header: SectionTitle("기타")) {
+                    RectangularNavigationLink(destination: Text("ss")){
+                        Text("도움말")
                     }
+                    RectangularNavigationLink(destination: Text("ss")){
+                        Text("회원탈퇴")
+                    }
+
                 }
-            .navigationBarTitle("설정")
-
-
             }
+            .background(LinearGradient.background)
+            .navigationBarTitle(Text("설정"), displayMode: .inline)
+            .navigationBarColor(.barColor)
         }
+    }
+    init(){
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
     }
 }
 

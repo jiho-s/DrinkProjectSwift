@@ -10,7 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Color.barColor
+                .edgesIgnoringSafeArea(.all)
+            TabView {
+
+                HomeView()
+                .tabItem {
+                    Image(systemName: "star")
+                    Text("우우")
+                }
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "star.fill")
+                        Text("설정")
+                    }
+            }
+        }
     }
 }
 

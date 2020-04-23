@@ -21,7 +21,7 @@ struct RectangularButton: View {
         }
         .padding()
         .frame(width: 300.0)
-        .background(Color.init(red: 237/255, green: 237/255, blue: 237/255))
+        .background(Color.field)
         .foregroundColor(.black)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(10)

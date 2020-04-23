@@ -14,8 +14,7 @@ struct HomeView: View {
     @State private var showingPastSheet = false
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color(red: 100/255, green: 88/255, blue: 149/255), Color(red: 214/255, green: 130/255, blue: 148/255)]), startPoint: .topTrailing, endPoint: .bottomLeading)
-            .edgesIgnoringSafeArea(.all)
+            LinearGradient.background
             VStack {
                 Image("default")
                     .resizable()
@@ -35,7 +34,7 @@ struct HomeView: View {
                     Text("ee")
                 }
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
     
 }
