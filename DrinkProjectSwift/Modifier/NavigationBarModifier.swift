@@ -22,15 +22,22 @@ struct NavigationBarModifier: ViewModifier {
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
-        UINavigationBar.appearance().tintColor = .back1
-
+        UINavigationBar.appearance().tintColor = .field
     }
 
     func body(content: Content) -> some View {
         ZStack{
-            Color(self.backgroundColor ?? .clear)
-                .edgesIgnoringSafeArea(.top)
+//            Color(self.backgroundColor ?? .clear)
+//                .edgesIgnoringSafeArea(.top)
             content
+            VStack {
+                GeometryReader { geometry in
+                    Color(self.backgroundColor ?? .clear)
+                        .frame(height: geometry.safeAreaInsets.top)
+                        .edgesIgnoringSafeArea(.top)
+                    Spacer()
+                }
+            }
         }
     }
 //    func body(content: Content) -> some View {

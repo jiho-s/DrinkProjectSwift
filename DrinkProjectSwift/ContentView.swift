@@ -26,7 +26,7 @@ struct ContentView: View {
                         Text("설정")
                     }
             }
-            .accentColor(.back2)
+            .accentColor(.field)
             .tabBarColor()
         }
     }

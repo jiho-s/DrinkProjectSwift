@@ -16,7 +16,6 @@
 		130565FB244D941D0015BC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130565F9244D941D0015BC2B /* LaunchScreen.storyboard */; };
 		13056604244D99E20015BC2B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056603244D99E20015BC2B /* SettingView.swift */; };
 		13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056608244DA0D40015BC2B /* ProfileImage.swift */; };
-		1311D5B9244FDAC2007ECC0D /* BackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5B8244FDAC2007ECC0D /* BackGround.swift */; };
 		1311D5BD244FDED2007ECC0D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5BC244FDED2007ECC0D /* Color.swift */; };
 		1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5C0244FFDA9007ECC0D /* BackgroundStack.swift */; };
 		1311D5C52450169A007ECC0D /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */; };
@@ -45,7 +44,6 @@
 		130565FC244D941D0015BC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13056603244D99E20015BC2B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		13056608244DA0D40015BC2B /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
-		1311D5B8244FDAC2007ECC0D /* BackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGround.swift; sourceTree = "<group>"; };
 		1311D5BC244FDED2007ECC0D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		1311D5C0244FFDA9007ECC0D /* BackgroundStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundStack.swift; sourceTree = "<group>"; };
 		1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			children = (
 				13056608244DA0D40015BC2B /* ProfileImage.swift */,
 				137B6810244E85AC0022E00F /* RectangularButton.swift */,
-				1311D5B8244FDAC2007ECC0D /* BackGround.swift */,
 				1311D5CE245039BB007ECC0D /* SectionTitle.swift */,
 			);
 			path = SupportingVIews;
@@ -282,7 +279,6 @@
 			files = (
 				1311D5D1245121AA007ECC0D /* Section.swift in Sources */,
 				130565EC244D94170015BC2B /* AppDelegate.swift in Sources */,
-				1311D5B9244FDAC2007ECC0D /* BackGround.swift in Sources */,
 				1311D5D924513091007ECC0D /* RectangularToggle.swift in Sources */,
 				1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */,
 				1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */,

@@ -19,11 +19,9 @@ struct RectangularButton: View {
             Text(title)
                 .font(.headline)
         }
-        .padding()
         .frame(width: 300.0)
-        .background(Color.field)
         .foregroundColor(.black)
-        .clipShape(RoundedRectangle(cornerRadius: 15))
+        .fieldStyle()
         .padding(10)
         //.shadow(radius: isOn ? 0 : 5)
     }

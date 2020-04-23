@@ -14,7 +14,7 @@ struct TabBarModifier: ViewModifier {
 //        coloredAppearance.backgroundColor = .barColor
 //        coloredAppearance.tintColor = .barColor
         coloredAppearance.barTintColor = .barColor
-        coloredAppearance.unselectedItemTintColor = .lightGray
+        coloredAppearance.unselectedItemTintColor = .gray
     }
     func body(content: Content) -> some View {
         content
