@@ -68,6 +68,7 @@ struct SettingsView: View {
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
     }
+    
 }
 
 struct SettingsView_Previews: PreviewProvider {

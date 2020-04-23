@@ -17,12 +17,12 @@ struct ContentView: View {
 
                 HomeView()
                 .tabItem {
-                    Image(systemName: "star")
-                    Text("우우")
+                    Image(systemName: "moon.fill")
+                    Text("술 추가")
                 }
                 SettingsView()
                     .tabItem {
-                        Image(systemName: "star.fill")
+                        Image(systemName: "gear")
                         Text("설정")
                     }
             }
@@ -30,7 +30,6 @@ struct ContentView: View {
             .tabBarColor()
         }
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
