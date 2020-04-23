@@ -17,9 +17,8 @@ struct RectangularNavigationLink<Label, Destination>: View  where Label : View, 
     }
     var body: some View {
         NavigationLink(destination: destination, label: label)
-            .padding()
-            .background(Color.field)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .frame(height: 20)
+            .fieldStyle()
     }
 }
 

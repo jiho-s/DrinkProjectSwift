@@ -23,9 +23,12 @@ struct SettingsView: View {
 
 
                 Section(header: SectionTitle("기본 설정")) {
-                    ToggleRowView(title: "자동 로그인", isOn: .constant(true))
-                    ToggleRowView(title: "알림", isOn: .constant(true))
-
+                    RectangularToggle(isOn: .constant(true)){
+                        Text("자동로그인")
+                    }
+                    RectangularToggle(isOn: .constant(true)){
+                        Text("알림")
+                    }
                 }
 
                 Section(header: SectionTitle("데이터 관리")) {

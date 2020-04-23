@@ -12,4 +12,7 @@ extension View {
     func navigationBarColor(_ backgroundColor: UIColor?) -> some View {
         self.modifier(NavigationBarModifier(backgroundColor: backgroundColor))
     }
+    func fieldStyle() -> some View {
+        self.modifier(FieldModifier())
+    }
 }
