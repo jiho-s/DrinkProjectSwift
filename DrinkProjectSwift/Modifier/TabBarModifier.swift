@@ -9,12 +9,15 @@
 import SwiftUI
 
 struct TabBarModifier: ViewModifier {
+//    let backgrounColor: Color?
     init() {
-        let coloredAppearance = UITabBar.appearance()
-//        coloredAppearance.backgroundColor = .barColor
-//        coloredAppearance.tintColor = .barColor
-        coloredAppearance.barTintColor = .barColor
-        coloredAppearance.unselectedItemTintColor = .gray
+        let coloredAppearance = UITabBarAppearance()
+        coloredAppearance.backgroundColor = .clear
+        
+        UITabBar.appearance().backgroundColor = .barColor
+        UITabBar.appearance().tintColor = .barColor
+        UITabBar.appearance().barTintColor = .barColor
+        UITabBar.appearance().unselectedItemTintColor = .gray
     }
     func body(content: Content) -> some View {
         content

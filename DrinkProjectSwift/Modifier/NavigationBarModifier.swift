@@ -27,8 +27,6 @@ struct NavigationBarModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         ZStack{
-//            Color(self.backgroundColor ?? .clear)
-//                .edgesIgnoringSafeArea(.top)
             content
             VStack {
                 GeometryReader { geometry in
@@ -40,8 +38,5 @@ struct NavigationBarModifier: ViewModifier {
             }
         }
     }
-//    func body(content: Content) -> some View {
-//        content
-//    }
 }
 
