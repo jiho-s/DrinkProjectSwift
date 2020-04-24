@@ -10,25 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color.barColor
-                .edgesIgnoringSafeArea(.all)
-            TabView {
-
-                HomeView()
-                .tabItem {
-                    Image(systemName: "moon.fill")
-                    Text("술 추가")
-                }
-                SettingsView()
-                    .tabItem {
-                        Image(systemName: "gear")
-                        Text("설정")
-                    }
+        TabView {
+            HomeView()
+            .tabItem {
+                Image(systemName: "moon.fill")
+                Text("술 추가")
             }
-            .accentColor(.field)
-            .tabBarColor()
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("설정")
+                }
         }
+        .accentColor(.field)
+        .tabBarColor()
     }
 }
 

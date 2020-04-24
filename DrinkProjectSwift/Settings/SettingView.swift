@@ -32,7 +32,11 @@ struct SettingsView: View {
                 }
 
                 Section(header: SectionTitle("데이터 관리")) {
-                    RectangularNavigationLink(destination: Text("ss")){
+                    RectangularNavigationLink(destination:
+                        Text("ss")
+                            .navigationBarColor(.barColor)
+                        .navigationBarTitle("사용자 음주량 추가")
+                    ){
                         Text("사용자 음주량 추가")
                     }
                     RectangularNavigationLink(destination: Text("ss")){
@@ -56,18 +60,15 @@ struct SettingsView: View {
                     RectangularNavigationLink(destination: Text("ss")){
                         Text("회원탈퇴")
                     }
-
                 }
+            .tableClear()
             }
             .background(LinearGradient.background)
             .navigationBarTitle(Text("설정"), displayMode: .inline)
             .navigationBarColor(.barColor)
         }
     }
-    init(){
-        UITableView.appearance().backgroundColor = .clear
-        UITableViewCell.appearance().backgroundColor = .clear
-    }
+
     
 }
 

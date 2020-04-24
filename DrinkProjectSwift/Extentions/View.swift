@@ -19,4 +19,7 @@ extension View {
     func tabBarColor() -> some View {
         self.modifier(TabBarModifier())
     }
+    func tableClear() -> some View {
+        self.modifier(TableVIewModifier())
+    }
 }

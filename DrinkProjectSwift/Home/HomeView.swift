@@ -20,18 +20,33 @@ struct HomeView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150)
-                    .padding(100)
+                    .padding(70)
                 RectangularButton(title: "오늘 마신 술 잔으로 추가하기", isOn: self.$showingTodaySheet)
                 .sheet(isPresented: $showingTodaySheet){
-                    Text("dd")
+                    ZStack{
+                        LinearGradient.background
+                        Text("오늘")
+                            .frame(width: 300)
+                            .fieldStyle()
+                    }
                 }
                 RectangularButton(title: "오늘 마신 술 여러 사람으로 나누기", isOn: self.$showingManyTodaySheet)
                 .sheet(isPresented: $showingManyTodaySheet){
-                    Text("dd")
+                    ZStack{
+                        Color.back1
+                        Text("오늘여러 사람")
+                            .frame(width: 300)
+                            .fieldStyle()
+                    }
                 }
                 RectangularButton(title: "과거에 마신 술 추가하기", isOn: self.$showingPastSheet)
                 .sheet(isPresented: $showingPastSheet){
-                    Text("ee")
+                    ZStack{
+                        Color.back2
+                        Text("과거")
+                            .frame(width: 300)
+                            .fieldStyle()
+                    }
                 }
             }
         }.edgesIgnoringSafeArea(.all)
