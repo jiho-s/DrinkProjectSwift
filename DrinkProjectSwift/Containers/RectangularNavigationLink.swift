@@ -17,7 +17,7 @@ struct RectangularNavigationLink<Label, Destination>: View  where Label : View, 
     }
     var body: some View {
         NavigationLink(destination: destination, label: label)
-            .frame(height: 20)
+            .frame(height: 10)
             .fieldStyle()
     }
 }

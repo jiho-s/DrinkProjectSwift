@@ -17,9 +17,8 @@ struct RectangularButton: View {
             
         }){
             Text(title)
-                .font(.headline)
         }
-        .frame(width: 300.0)
+        .frame(width: 300.0, height: 15)
         .foregroundColor(.black)
         .fieldStyle()
         .padding(10)

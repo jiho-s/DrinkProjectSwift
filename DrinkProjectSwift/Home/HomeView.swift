@@ -16,7 +16,7 @@ struct HomeView: View {
         ZStack {
             LinearGradient.background
             VStack {
-                Image("default")
+                Image("wine")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150)
