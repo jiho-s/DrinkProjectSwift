@@ -16,11 +16,21 @@ struct ContentView: View {
                 Image(systemName: "moon.fill")
                 Text("술 추가")
             }
+            JournalView()
+                .tabItem {
+                    Image(systemName: "moon.fill")
+                    Text("일지")
+            }
+            StatisticsView()
+                .tabItem {
+                    Image(systemName: "moon.fill")
+                    Text("통계")
+            }
             SettingsView()
                 .tabItem {
                     Image(systemName: "gear")
                     Text("설정")
-                }
+            }
         }
         .accentColor(.field)
         .tabBarColor()

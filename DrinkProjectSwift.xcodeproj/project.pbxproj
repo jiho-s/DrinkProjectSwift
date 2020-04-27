@@ -16,6 +16,8 @@
 		130565FB244D941D0015BC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130565F9244D941D0015BC2B /* LaunchScreen.storyboard */; };
 		13056604244D99E20015BC2B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056603244D99E20015BC2B /* SettingView.swift */; };
 		13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056608244DA0D40015BC2B /* ProfileImage.swift */; };
+		131021D72456A2B9006E6F3B /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021D62456A2B9006E6F3B /* JournalView.swift */; };
+		131021D92456A2D2006E6F3B /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021D82456A2D2006E6F3B /* StatisticsView.swift */; };
 		1311D5BD244FDED2007ECC0D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5BC244FDED2007ECC0D /* Color.swift */; };
 		1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5C0244FFDA9007ECC0D /* BackgroundStack.swift */; };
 		1311D5C52450169A007ECC0D /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */; };
@@ -46,6 +48,8 @@
 		130565FC244D941D0015BC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13056603244D99E20015BC2B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		13056608244DA0D40015BC2B /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		131021D62456A2B9006E6F3B /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		131021D82456A2D2006E6F3B /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		1311D5BC244FDED2007ECC0D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		1311D5C0244FFDA9007ECC0D /* BackgroundStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundStack.swift; sourceTree = "<group>"; };
 		1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 		137B680B244E7EF40022E00F /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				131021D82456A2D2006E6F3B /* StatisticsView.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 		137B680C244E7EF60022E00F /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				131021D62456A2B9006E6F3B /* JournalView.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -289,12 +295,14 @@
 				13AA76CA24516518002F5C33 /* HostingController.swift in Sources */,
 				1311D5D924513091007ECC0D /* RectangularToggle.swift in Sources */,
 				1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */,
+				131021D72456A2B9006E6F3B /* JournalView.swift in Sources */,
 				1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */,
 				1311D5BD244FDED2007ECC0D /* Color.swift in Sources */,
 				1311D5CF245039BB007ECC0D /* SectionTitle.swift in Sources */,
 				137B680F244E7FDF0022E00F /* HomeView.swift in Sources */,
 				13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */,
 				13056604244D99E20015BC2B /* SettingView.swift in Sources */,
+				131021D92456A2D2006E6F3B /* StatisticsView.swift in Sources */,
 				1311D5CD245029AD007ECC0D /* LinearGradient.swift in Sources */,
 				137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */,
 				130565F1244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld in Sources */,
