@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,10 @@
 		13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13056608244DA0D40015BC2B /* ProfileImage.swift */; };
 		131021D72456A2B9006E6F3B /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021D62456A2B9006E6F3B /* JournalView.swift */; };
 		131021D92456A2D2006E6F3B /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021D82456A2D2006E6F3B /* StatisticsView.swift */; };
+		131021E82456D901006E6F3B /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021E72456D901006E6F3B /* WeekView.swift */; };
+		131021EA2456ECEC006E6F3B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021E92456ECEC006E6F3B /* CalendarView.swift */; };
+		131021EC2457D063006E6F3B /* CalendarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021EB2457D063006E6F3B /* CalendarModifier.swift */; };
+		131021EE24585B38006E6F3B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131021ED24585B38006E6F3B /* Data.swift */; };
 		1311D5BD244FDED2007ECC0D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5BC244FDED2007ECC0D /* Color.swift */; };
 		1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5C0244FFDA9007ECC0D /* BackgroundStack.swift */; };
 		1311D5C52450169A007ECC0D /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */; };
@@ -34,9 +38,11 @@
 		137B680F244E7FDF0022E00F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B680E244E7FDF0022E00F /* HomeView.swift */; };
 		137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B6810244E85AC0022E00F /* RectangularButton.swift */; };
 		13AA76CA24516518002F5C33 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA76C924516518002F5C33 /* HostingController.swift */; };
+		DBB074EF89C760AC4048EAF4 /* Pods_DrinkProjectSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1099082CFE8238CE7BC2B0 /* Pods_DrinkProjectSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B22F80B636395E6190A9926 /* Pods-DrinkProjectSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkProjectSwift.release.xcconfig"; path = "Target Support Files/Pods-DrinkProjectSwift/Pods-DrinkProjectSwift.release.xcconfig"; sourceTree = "<group>"; };
 		130565E8244D94170015BC2B /* DrinkProjectSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkProjectSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		130565EB244D94170015BC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		130565ED244D94170015BC2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,10 @@
 		13056608244DA0D40015BC2B /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		131021D62456A2B9006E6F3B /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		131021D82456A2D2006E6F3B /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		131021E72456D901006E6F3B /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		131021E92456ECEC006E6F3B /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		131021EB2457D063006E6F3B /* CalendarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModifier.swift; sourceTree = "<group>"; };
+		131021ED24585B38006E6F3B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1311D5BC244FDED2007ECC0D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		1311D5C0244FFDA9007ECC0D /* BackgroundStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundStack.swift; sourceTree = "<group>"; };
 		1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 		137B680E244E7FDF0022E00F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		137B6810244E85AC0022E00F /* RectangularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularButton.swift; sourceTree = "<group>"; };
 		13AA76C924516518002F5C33 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		EB1099082CFE8238CE7BC2B0 /* Pods_DrinkProjectSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkProjectSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE834D60817F8EE57FE6DA2F /* Pods-DrinkProjectSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkProjectSwift.debug.xcconfig"; path = "Target Support Files/Pods-DrinkProjectSwift/Pods-DrinkProjectSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB074EF89C760AC4048EAF4 /* Pods_DrinkProjectSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +97,8 @@
 			children = (
 				130565EA244D94170015BC2B /* DrinkProjectSwift */,
 				130565E9244D94170015BC2B /* Products */,
+				40C0A50F1842BB732B7DC5FE /* Pods */,
+				6509CD792B616C40E3D6439A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +118,6 @@
 				1311D5BF244FFD78007ECC0D /* Containers */,
 				1311D5C72450170C007ECC0D /* Extentions */,
 				137B6808244E7EEA0022E00F /* Modifier */,
-				13056605244DA05A0015BC2B /* Models */,
 				13056607244DA07B0015BC2B /* SupportingVIews */,
 				137B680D244E7EFB0022E00F /* Home */,
 				137B680C244E7EF60022E00F /* Journal */,
@@ -140,6 +154,7 @@
 		13056605244DA05A0015BC2B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				131021ED24585B38006E6F3B /* Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,8 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				13056608244DA0D40015BC2B /* ProfileImage.swift */,
-				137B6810244E85AC0022E00F /* RectangularButton.swift */,
 				1311D5CE245039BB007ECC0D /* SectionTitle.swift */,
+				131021E92456ECEC006E6F3B /* CalendarView.swift */,
+				137B6810244E85AC0022E00F /* RectangularButton.swift */,
+				13056605244DA05A0015BC2B /* Models */,
 			);
 			path = SupportingVIews;
 			sourceTree = "<group>";
@@ -180,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				1311D5C42450169A007ECC0D /* NavigationBarModifier.swift */,
+				131021EB2457D063006E6F3B /* CalendarModifier.swift */,
 				133F0B132452900200003E1A /* TableVIewModifier.swift */,
 				1311D5DA2451342A007ECC0D /* FieldModifier.swift */,
 				1311D5DC2451399B007ECC0D /* TabBarModifier.swift */,
@@ -206,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				131021D62456A2B9006E6F3B /* JournalView.swift */,
+				131021E72456D901006E6F3B /* WeekView.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -218,6 +237,23 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		40C0A50F1842BB732B7DC5FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE834D60817F8EE57FE6DA2F /* Pods-DrinkProjectSwift.debug.xcconfig */,
+				0B22F80B636395E6190A9926 /* Pods-DrinkProjectSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6509CD792B616C40E3D6439A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB1099082CFE8238CE7BC2B0 /* Pods_DrinkProjectSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 130565FF244D941D0015BC2B /* Build configuration list for PBXNativeTarget "DrinkProjectSwift" */;
 			buildPhases = (
+				5237810340496FBB15F8DC04 /* [CP] Check Pods Manifest.lock */,
 				130565E4244D94170015BC2B /* Sources */,
 				130565E5244D94170015BC2B /* Frameworks */,
 				130565E6244D94170015BC2B /* Resources */,
+				C23608E71A199F89AC0F87C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,18 +322,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5237810340496FBB15F8DC04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinkProjectSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23608E71A199F89AC0F87C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkProjectSwift/Pods-DrinkProjectSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkProjectSwift/Pods-DrinkProjectSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinkProjectSwift/Pods-DrinkProjectSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		130565E4244D94170015BC2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1311D5D1245121AA007ECC0D /* Section.swift in Sources */,
+				131021E82456D901006E6F3B /* WeekView.swift in Sources */,
 				130565EC244D94170015BC2B /* AppDelegate.swift in Sources */,
 				133F0B142452900200003E1A /* TableVIewModifier.swift in Sources */,
 				13AA76CA24516518002F5C33 /* HostingController.swift in Sources */,
 				1311D5D924513091007ECC0D /* RectangularToggle.swift in Sources */,
+				131021EA2456ECEC006E6F3B /* CalendarView.swift in Sources */,
+				131021EE24585B38006E6F3B /* Data.swift in Sources */,
 				1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */,
 				131021D72456A2B9006E6F3B /* JournalView.swift in Sources */,
+				131021EC2457D063006E6F3B /* CalendarModifier.swift in Sources */,
 				1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */,
 				1311D5BD244FDED2007ECC0D /* Color.swift in Sources */,
 				1311D5CF245039BB007ECC0D /* SectionTitle.swift in Sources */,
@@ -448,6 +532,7 @@
 		};
 		13056600244D941D0015BC2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE834D60817F8EE57FE6DA2F /* Pods-DrinkProjectSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +552,7 @@
 		};
 		13056601244D941D0015BC2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B22F80B636395E6190A9926 /* Pods-DrinkProjectSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

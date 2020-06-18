@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import FSCalendar
 extension View {
     func navigationBarColor(_ backgroundColor: UIColor?) -> some View {
         self.modifier(NavigationBarModifier(backgroundColor: backgroundColor))
@@ -21,5 +21,8 @@ extension View {
     }
     func tableClear() -> some View {
         self.modifier(TableVIewModifier())
+    }
+    func calendarDisplayMod(_ displayMode: FSCalendarScope) -> some View {
+        self.modifier(CalendarModifier(displayMode: displayMode))
     }
 }

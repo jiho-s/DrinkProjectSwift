@@ -25,7 +25,7 @@ struct RectangularToggle<Label>: View where Label : View{
 struct RectangularToggle_Previews: PreviewProvider {
     static var previews: some View {
         RectangularToggle(isOn: .constant(true)) {
-            Text("dd")
+            Text("자동 로그인")
         }
     }
 }

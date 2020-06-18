@@ -7,12 +7,35 @@
 //
 
 import SwiftUI
-
 struct JournalView: View {
+    @State private var selectedDate = Date()
+    @State private var showDateDetail = false
+    @State private var navigationTitle = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                NavigationLink(destination: WeekView(selectedDate: $selectedDate, navigationTitle: $navigationTitle), isActive: $showDateDetail){
+                    Text("")
+                }
+                CalendarView(selectedDate: $selectedDate, displayMode: .month, currentYM: $navigationTitle,showingDateDetail: $showDateDetail)
+                    .navigationBarItems(trailing:
+                        Button(action: {
+                        }){
+                            Image(systemName: "plus")
+                        }
+                        )
+                    .navigationBarTitle(Text(navigationTitle), displayMode: .inline)
+                    .navigationBarColor(.barColor)
+            }.onAppear(perform: getMonth)
+        }
+    }
+    func getMonth() {
+        let monthFormatter = DateFormatter()
+        monthFormatter.dateFormat = "YYYY년 M월"
+        navigationTitle = monthFormatter.string(from: selectedDate)
     }
 }
+
 
 struct JournalView_Previews: PreviewProvider {
     static var previews: some View {

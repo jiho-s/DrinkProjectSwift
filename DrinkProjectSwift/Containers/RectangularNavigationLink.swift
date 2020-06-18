@@ -24,8 +24,8 @@ struct RectangularNavigationLink<Label, Destination>: View  where Label : View, 
 
 struct RectangularNavigationLink_Previews: PreviewProvider {
     static var previews: some View {
-        RectangularNavigationLink(destination: Text("dd")){
-            Text("ee")
+        RectangularNavigationLink(destination: Text("ㅇㅇ")){
+            Text("사용자")
         }
     }
 }
