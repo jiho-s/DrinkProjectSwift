@@ -3,7 +3,7 @@
     <entity name="AccountEvent" representedClassName="AccountEvent" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="user_alcohol_by_volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAlcohol" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="category_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AccountEventCategory"/>
         <relationship name="event_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event"/>
     </entity>
@@ -13,20 +13,20 @@
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
-        <attribute name="drink_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="drinkDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="total_alcohol_by_volune" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalAlcohol" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <entity name="EventItem" representedClassName="EventItem" syncable="YES" codeGenerationType="class">
-        <attribute name="alcohol_by_volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="alcoholByVolume" optional="YES" attributeType="Double" minValueString="0" maxValueString="100" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="event_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event"/>
         <relationship name="item_id" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="alcohol_by_volume" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="categoryof_item" optional="YES" attributeType="String"/>
+        <attribute name="alcoholByVolume" optional="YES" attributeType="Double" minValueString="0" maxValueString="100" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="categoryofItem" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
