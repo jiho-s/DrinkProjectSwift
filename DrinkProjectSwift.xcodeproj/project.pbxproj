@@ -30,6 +30,16 @@
 		1311D5DB2451342A007ECC0D /* FieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5DA2451342A007ECC0D /* FieldModifier.swift */; };
 		1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D5DC2451399B007ECC0D /* TabBarModifier.swift */; };
 		133F0B142452900200003E1A /* TableVIewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F0B132452900200003E1A /* TableVIewModifier.swift */; };
+		13502906249DE17100D9FDFE /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135028FC249DE17100D9FDFE /* Item+CoreDataClass.swift */; };
+		13502907249DE17100D9FDFE /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135028FD249DE17100D9FDFE /* Item+CoreDataProperties.swift */; };
+		13502908249DE17100D9FDFE /* EventItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135028FE249DE17100D9FDFE /* EventItem+CoreDataClass.swift */; };
+		13502909249DE17100D9FDFE /* EventItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135028FF249DE17100D9FDFE /* EventItem+CoreDataProperties.swift */; };
+		1350290A249DE17100D9FDFE /* AccountEventCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13502900249DE17100D9FDFE /* AccountEventCategory+CoreDataClass.swift */; };
+		1350290B249DE17100D9FDFE /* AccountEventCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13502901249DE17100D9FDFE /* AccountEventCategory+CoreDataProperties.swift */; };
+		1350290C249DE17100D9FDFE /* AccountEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13502902249DE17100D9FDFE /* AccountEvent+CoreDataClass.swift */; };
+		1350290D249DE17100D9FDFE /* AccountEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13502903249DE17100D9FDFE /* AccountEvent+CoreDataProperties.swift */; };
+		1350290E249DE17100D9FDFE /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13502904249DE17100D9FDFE /* Event+CoreDataClass.swift */; };
+		1350290F249DE17100D9FDFE /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13502905249DE17100D9FDFE /* Event+CoreDataProperties.swift */; };
 		136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A8533244EB48C00DC33B8 /* ToggleRowView.swift */; };
 		137B680F244E7FDF0022E00F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B680E244E7FDF0022E00F /* HomeView.swift */; };
 		137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B6810244E85AC0022E00F /* RectangularButton.swift */; };
@@ -62,6 +72,16 @@
 		1311D5DA2451342A007ECC0D /* FieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModifier.swift; sourceTree = "<group>"; };
 		1311D5DC2451399B007ECC0D /* TabBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModifier.swift; sourceTree = "<group>"; };
 		133F0B132452900200003E1A /* TableVIewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVIewModifier.swift; sourceTree = "<group>"; };
+		135028FC249DE17100D9FDFE /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		135028FD249DE17100D9FDFE /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		135028FE249DE17100D9FDFE /* EventItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventItem+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		135028FF249DE17100D9FDFE /* EventItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventItem+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		13502900249DE17100D9FDFE /* AccountEventCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountEventCategory+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		13502901249DE17100D9FDFE /* AccountEventCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountEventCategory+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		13502902249DE17100D9FDFE /* AccountEvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountEvent+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		13502903249DE17100D9FDFE /* AccountEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountEvent+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		13502904249DE17100D9FDFE /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		13502905249DE17100D9FDFE /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		136A8533244EB48C00DC33B8 /* ToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRowView.swift; sourceTree = "<group>"; };
 		137B680E244E7FDF0022E00F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		137B6810244E85AC0022E00F /* RectangularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularButton.swift; sourceTree = "<group>"; };
@@ -180,6 +200,16 @@
 		135028FB249CDF3100D9FDFE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				135028FC249DE17100D9FDFE /* Item+CoreDataClass.swift */,
+				135028FD249DE17100D9FDFE /* Item+CoreDataProperties.swift */,
+				135028FE249DE17100D9FDFE /* EventItem+CoreDataClass.swift */,
+				135028FF249DE17100D9FDFE /* EventItem+CoreDataProperties.swift */,
+				13502900249DE17100D9FDFE /* AccountEventCategory+CoreDataClass.swift */,
+				13502901249DE17100D9FDFE /* AccountEventCategory+CoreDataProperties.swift */,
+				13502902249DE17100D9FDFE /* AccountEvent+CoreDataClass.swift */,
+				13502903249DE17100D9FDFE /* AccountEvent+CoreDataProperties.swift */,
+				13502904249DE17100D9FDFE /* Event+CoreDataClass.swift */,
+				13502905249DE17100D9FDFE /* Event+CoreDataProperties.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -302,24 +332,34 @@
 				133F0B142452900200003E1A /* TableVIewModifier.swift in Sources */,
 				13AA76CA24516518002F5C33 /* HostingController.swift in Sources */,
 				1311D5D924513091007ECC0D /* RectangularToggle.swift in Sources */,
+				13502909249DE17100D9FDFE /* EventItem+CoreDataProperties.swift in Sources */,
 				1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */,
 				131021D72456A2B9006E6F3B /* JournalView.swift in Sources */,
 				1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */,
 				1311D5BD244FDED2007ECC0D /* Color.swift in Sources */,
+				1350290D249DE17100D9FDFE /* AccountEvent+CoreDataProperties.swift in Sources */,
 				1311D5CF245039BB007ECC0D /* SectionTitle.swift in Sources */,
+				1350290C249DE17100D9FDFE /* AccountEvent+CoreDataClass.swift in Sources */,
 				137B680F244E7FDF0022E00F /* HomeView.swift in Sources */,
 				13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */,
 				13056604244D99E20015BC2B /* SettingView.swift in Sources */,
 				131021D92456A2D2006E6F3B /* StatisticsView.swift in Sources */,
 				1311D5CD245029AD007ECC0D /* LinearGradient.swift in Sources */,
+				1350290F249DE17100D9FDFE /* Event+CoreDataProperties.swift in Sources */,
 				137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */,
+				1350290E249DE17100D9FDFE /* Event+CoreDataClass.swift in Sources */,
 				130565F1244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld in Sources */,
+				1350290A249DE17100D9FDFE /* AccountEventCategory+CoreDataClass.swift in Sources */,
 				1311D5DB2451342A007ECC0D /* FieldModifier.swift in Sources */,
+				13502908249DE17100D9FDFE /* EventItem+CoreDataClass.swift in Sources */,
+				13502907249DE17100D9FDFE /* Item+CoreDataProperties.swift in Sources */,
 				1311D5D324512612007ECC0D /* RectangularNavigationLink.swift in Sources */,
 				130565F3244D94170015BC2B /* ContentView.swift in Sources */,
+				13502906249DE17100D9FDFE /* Item+CoreDataClass.swift in Sources */,
 				130565EE244D94170015BC2B /* SceneDelegate.swift in Sources */,
 				136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */,
 				1311D5C92450173A007ECC0D /* View.swift in Sources */,
+				1350290B249DE17100D9FDFE /* AccountEventCategory+CoreDataProperties.swift in Sources */,
 				1311D5C52450169A007ECC0D /* NavigationBarModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
