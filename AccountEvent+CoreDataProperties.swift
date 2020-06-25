@@ -22,5 +22,6 @@ extension AccountEvent {
     @NSManaged public var userAlcohol: Double
     @NSManaged public var category: AccountEventCategory?
     @NSManaged public var event: Event?
+    @NSManaged public var drinkDate: Date?
 
 }
