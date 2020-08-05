@@ -14,7 +14,7 @@ struct JournalView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                NavigationLink(destination: WeekView(selectedDate: $selectedDate, navigationTitle: $navigationTitle), isActive: $showDateDetail){
+                NavigationLink(destination: DayView(selectedDate: $selectedDate), isActive: $showDateDetail){
                     Text("")
                 }
                 CalendarView(selectedDate: $selectedDate, displayMode: .month, currentYM: $navigationTitle,showingDateDetail: $showDateDetail)
