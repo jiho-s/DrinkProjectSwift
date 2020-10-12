@@ -13,16 +13,17 @@ struct CalendarView: UIViewRepresentable {
     @Binding var selectedDate: Date
     @Binding var currnetYM: String
     @Binding var showingDateDetail: Bool
-    let displayMode: FSCalendarScope
+    let dates: [Date]
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
     
-    init(selectedDate: Binding<Date>, displayMode: FSCalendarScope, currentYM: Binding<String> ,showingDateDetail: Binding<Bool> = .constant(false)) {
+    init(selectedDate: Binding<Date>, currentYM: Binding<String> ,dates: [Date],showingDateDetail: Binding<Bool> = .constant(false)) {
         self._selectedDate = selectedDate
-        self.displayMode = displayMode
         self._currnetYM = currentYM
         self._showingDateDetail = showingDateDetail
+        self.dates = dates;
+        
     }
     
     func makeUIView(context: Context) -> FSCalendar {
@@ -35,7 +36,7 @@ struct CalendarView: UIViewRepresentable {
         calendar.calendarHeaderView.isHidden = true
         calendar.calendarHeaderView.backgroundColor = .clear
         calendar.headerHeight = 0
-        calendar.scope = displayMode
+        calendar.scope = .month
         calendar.select(selectedDate)
         return calendar
     }
@@ -70,6 +71,6 @@ struct CalendarView: UIViewRepresentable {
 }
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarView(selectedDate: .constant(Date()), displayMode: .month, currentYM: .constant("dd"),showingDateDetail: .constant(false))
+        CalendarView(selectedDate: .constant(Date()), currentYM: .constant("dd"),dates: [Date](),showingDateDetail: .constant(false))
     }
 }

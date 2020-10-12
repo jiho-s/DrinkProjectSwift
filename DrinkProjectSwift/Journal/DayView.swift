@@ -14,17 +14,8 @@ struct DayView: View {
     var body: some View {
         VStack{
             Form{
-                Section(header: SectionTitle("이벤트 목록")) {
-                    RectangularNavigationLink(destination: Text("ttt")){
-                        Text("이벤트 1")
-                    }
-                    RectangularNavigationLink(destination: Text("ttt")){
-                        Text("이벤트 2")
-                    }
-                    RectangularNavigationLink(destination: Text("ttt")){
-                        Text("이벤트 3")
-                    }
-                }
+                Text("이름")
+                Text("마신 주량")
             }
         .tableClear()
         }

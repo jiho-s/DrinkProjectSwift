@@ -17,7 +17,7 @@ struct JournalView: View {
                 NavigationLink(destination: DayView(selectedDate: $selectedDate), isActive: $showDateDetail){
                     Text("")
                 }
-                CalendarView(selectedDate: $selectedDate, displayMode: .month, currentYM: $navigationTitle,showingDateDetail: $showDateDetail)
+                CalendarView(selectedDate: $selectedDate, currentYM: $navigationTitle, dates: [Date](),showingDateDetail: $showDateDetail)
                     .navigationBarItems(trailing:
                         Button(action: {
                         }){
