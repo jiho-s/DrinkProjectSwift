@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		130565EC244D94170015BC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130565EB244D94170015BC2B /* AppDelegate.swift */; };
 		130565EE244D94170015BC2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130565ED244D94170015BC2B /* SceneDelegate.swift */; };
-		130565F1244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 130565EF244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld */; };
 		130565F3244D94170015BC2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130565F2244D94170015BC2B /* ContentView.swift */; };
 		130565F5244D941D0015BC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130565F4244D941D0015BC2B /* Assets.xcassets */; };
 		130565F8244D941D0015BC2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130565F7244D941D0015BC2B /* Preview Assets.xcassets */; };
@@ -46,7 +45,6 @@
 		130565E8244D94170015BC2B /* DrinkProjectSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkProjectSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		130565EB244D94170015BC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		130565ED244D94170015BC2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		130565F0244D94170015BC2B /* DrinkProjectSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrinkProjectSwift.xcdatamodel; sourceTree = "<group>"; };
 		130565F2244D94170015BC2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		130565F4244D941D0015BC2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		130565F7244D941D0015BC2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				130565F4244D941D0015BC2B /* Assets.xcassets */,
 				130565F9244D941D0015BC2B /* LaunchScreen.storyboard */,
 				130565FC244D941D0015BC2B /* Info.plist */,
-				130565EF244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld */,
 				130565F6244D941D0015BC2B /* Preview Content */,
 			);
 			path = DrinkProjectSwift;
@@ -389,7 +386,6 @@
 				131021D92456A2D2006E6F3B /* StatisticsView.swift in Sources */,
 				1311D5CD245029AD007ECC0D /* LinearGradient.swift in Sources */,
 				137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */,
-				130565F1244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld in Sources */,
 				1311D5DB2451342A007ECC0D /* FieldModifier.swift in Sources */,
 				1311D5D324512612007ECC0D /* RectangularNavigationLink.swift in Sources */,
 				130565F3244D94170015BC2B /* ContentView.swift in Sources */,
@@ -592,19 +588,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		130565EF244D94170015BC2B /* DrinkProjectSwift.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				130565F0244D94170015BC2B /* DrinkProjectSwift.xcdatamodel */,
-			);
-			currentVersion = 130565F0244D94170015BC2B /* DrinkProjectSwift.xcdatamodel */;
-			path = DrinkProjectSwift.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 130565E0244D94170015BC2B /* Project object */;
 }
