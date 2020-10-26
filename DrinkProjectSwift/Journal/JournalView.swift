@@ -8,31 +8,8 @@
 
 import SwiftUI
 struct JournalView: View {
-    @State private var selectedDate = Date()
-    @State private var showDateDetail = false
-    @State private var navigationTitle = ""
     var body: some View {
-        NavigationView {
-            ZStack {
-                NavigationLink(destination: DayView(selectedDate: $selectedDate), isActive: $showDateDetail){
-                    Text("")
-                }
-                CalendarView(selectedDate: $selectedDate, currentYM: $navigationTitle, dates: [Date](),showingDateDetail: $showDateDetail)
-                    .navigationBarItems(trailing:
-                        Button(action: {
-                        }){
-                            Image(systemName: "plus")
-                        }
-                        )
-                    .navigationBarTitle(Text(navigationTitle), displayMode: .inline)
-                    .navigationBarColor(.barColor)
-            }.onAppear(perform: getMonth)
-        }
-    }
-    func getMonth() {
-        let monthFormatter = DateFormatter()
-        monthFormatter.dateFormat = "YYYY년 M월"
-        navigationTitle = monthFormatter.string(from: selectedDate)
+        Text("")
     }
 }
 

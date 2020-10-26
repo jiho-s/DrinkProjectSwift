@@ -18,12 +18,12 @@ struct ContentView: View {
             }
             JournalView()
                 .tabItem {
-                    Image(systemName: "moon.fill")
+                    Image(systemName: "calendar")
                     Text("일지")
             }
             StatisticsView()
                 .tabItem {
-                    Image(systemName: "moon.fill")
+                    Image(systemName: "note.text")
                     Text("통계")
             }
             SettingsView()
