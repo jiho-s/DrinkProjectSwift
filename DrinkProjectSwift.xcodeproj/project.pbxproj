@@ -36,6 +36,8 @@
 		136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A8533244EB48C00DC33B8 /* ToggleRowView.swift */; };
 		137B680F244E7FDF0022E00F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B680E244E7FDF0022E00F /* HomeView.swift */; };
 		137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B6810244E85AC0022E00F /* RectangularButton.swift */; };
+		138F97D22546E9AE00EDD7C6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F97D12546E9AE00EDD7C6 /* LoginView.swift */; };
+		138F97D52546E9C600EDD7C6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F97D42546E9C600EDD7C6 /* SignUpView.swift */; };
 		13AA76CA24516518002F5C33 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA76C924516518002F5C33 /* HostingController.swift */; };
 		DBB074EF89C760AC4048EAF4 /* Pods_DrinkProjectSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1099082CFE8238CE7BC2B0 /* Pods_DrinkProjectSwift.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		136A8533244EB48C00DC33B8 /* ToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRowView.swift; sourceTree = "<group>"; };
 		137B680E244E7FDF0022E00F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		137B6810244E85AC0022E00F /* RectangularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularButton.swift; sourceTree = "<group>"; };
+		138F97D12546E9AE00EDD7C6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		138F97D42546E9C600EDD7C6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		13AA76C924516518002F5C33 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		EB1099082CFE8238CE7BC2B0 /* Pods_DrinkProjectSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkProjectSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE834D60817F8EE57FE6DA2F /* Pods-DrinkProjectSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkProjectSwift.debug.xcconfig"; path = "Target Support Files/Pods-DrinkProjectSwift/Pods-DrinkProjectSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		130565EA244D94170015BC2B /* DrinkProjectSwift */ = {
 			isa = PBXGroup;
 			children = (
+				138F97D02546E99B00EDD7C6 /* Login */,
 				130565EB244D94170015BC2B /* AppDelegate.swift */,
 				130565ED244D94170015BC2B /* SceneDelegate.swift */,
 				1311D5BF244FFD78007ECC0D /* Containers */,
@@ -232,6 +237,15 @@
 				137B680E244E7FDF0022E00F /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		138F97D02546E99B00EDD7C6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				138F97D12546E9AE00EDD7C6 /* LoginView.swift */,
+				138F97D42546E9C600EDD7C6 /* SignUpView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		40C0A50F1842BB732B7DC5FE /* Pods */ = {
@@ -388,9 +402,11 @@
 				137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */,
 				1311D5DB2451342A007ECC0D /* FieldModifier.swift in Sources */,
 				1311D5D324512612007ECC0D /* RectangularNavigationLink.swift in Sources */,
+				138F97D22546E9AE00EDD7C6 /* LoginView.swift in Sources */,
 				130565F3244D94170015BC2B /* ContentView.swift in Sources */,
 				130565EE244D94170015BC2B /* SceneDelegate.swift in Sources */,
 				136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */,
+				138F97D52546E9C600EDD7C6 /* SignUpView.swift in Sources */,
 				1311D5C92450173A007ECC0D /* View.swift in Sources */,
 				1311D5C52450169A007ECC0D /* NavigationBarModifier.swift in Sources */,
 			);

@@ -8,3 +8,12 @@
 
 import Foundation
 
+let baseUrl = "http://localhost:8080"
+let clientID = "myApp"
+let clientSecret = "pass"
+struct Token: Codable {
+    var access_token: String
+    var refresh_token: String
+}
+
+var token: Token?
