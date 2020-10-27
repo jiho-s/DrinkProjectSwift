@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var showingAlert = false
     @State private var username = ""
     @State private var password = ""
     var body: some View {
@@ -37,6 +38,9 @@ struct LoginView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .padding()
                 }
+                .alert(isPresented: $showingAlert){
+                    Alert(title: Text("로그인 실패"), message: Text("아이디 또는 비밀번호가 일치하지 않습니다."), dismissButton: .cancel(Text("취소")))
+                }
                 HStack {
                     Text("아직회원이 아니신가요?")
                     Button(action: {}) {
@@ -61,6 +65,11 @@ struct LoginView: View {
         request.setValue("Basic " + httpBasic, forHTTPHeaderField: "Authorization")
         request.httpMethod = "POST"
         URLSession.shared.dataTask(with: request) { (data, response, error) in
+            let httpResponse = response as! HTTPURLResponse
+            if httpResponse.statusCode == 400 {
+                showingAlert = true
+                return
+            }
 //            let urlResponse = response as! HTTPURLResponse
             if let data = data, let dataString = String(data: data, encoding: .utf8) {
                 print(dataString)
