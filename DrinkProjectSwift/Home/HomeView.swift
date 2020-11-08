@@ -7,11 +7,45 @@
 //
 
 import SwiftUI
+class EventRequest:ObservableObject, Encodable {
+    @Published var glass = "" {
+        didSet {
+            let filtered = glass.filter { $0.isNumber }
+            if glass != filtered {
+                glass = filtered
+            }
+        }
+    }
+    @Published var item = 0
+    @Published var name = ""
+    @Published var drinkDate = Date()
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }
+    enum CodingKeys: CodingKey {
+        case glass
+        case item
+        case name
+        case drinkDate
+    }
+    func encode(to encoder: Encoder) throws {
+        let stringDate = dateFormatter.string(from: drinkDate)
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(Int(glass) , forKey: .glass)
+        try container.encode(name, forKey: .name)
+        try container.encode(item, forKey: .item)
+        try container.encode(stringDate, forKey: .drinkDate)
+        }
+
+}
 
 struct HomeView: View {
     @State private var showingTodaySheet = false
     @State private var showingManyTodaySheet = false
     @State private var showingPastSheet = false
+    @ObservedObject var eventRequest = EventRequest()
     var body: some View {
         ZStack {
             LinearGradient.background
@@ -21,32 +55,20 @@ struct HomeView: View {
                     .scaledToFit()
                     .frame(width: 150, height: 150)
                     .padding(70)
-                RectangularButton(title: "오늘 마신 술 잔으로 추가하기", isOn: self.$showingTodaySheet)
-                .sheet(isPresented: $showingTodaySheet){
-                    ZStack{
-                        LinearGradient.background
-                        Text("오늘")
-                            .frame(width: 300)
-                            .fieldStyle()
-                    }
+                CustomButton(action: {
+                    eventRequest.drinkDate = Date()
+                    self.showingTodaySheet.toggle()
+                }) {
+                    Text("오늘 마신 술 잔으로 추가하기")
                 }
-                RectangularButton(title: "오늘 마신 술 여러 사람으로 나누기", isOn: self.$showingManyTodaySheet)
-                .sheet(isPresented: $showingManyTodaySheet){
-                    ZStack{
-                        Color.back1
-                        Text("오늘여러 사람")
-                            .frame(width: 300)
-                            .fieldStyle()
+                .sheet(isPresented: $showingTodaySheet){
+                    NavigationView {
+                        AddEventView(eventRequest: eventRequest)
                     }
                 }
                 RectangularButton(title: "과거에 마신 술 추가하기", isOn: self.$showingPastSheet)
                 .sheet(isPresented: $showingPastSheet){
-                    ZStack{
-                        Color.back2
-                        Text("과거")
-                            .frame(width: 300)
-                            .fieldStyle()
-                    }
+                    EventDateView(eventRequest: eventRequest)
                 }
             }
         }.edgesIgnoringSafeArea(.all)

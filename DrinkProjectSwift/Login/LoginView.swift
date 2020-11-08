@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(\.presentationMode) var presentationMode
     @State private var showingAlert = false
+    @State private var showingSignUp = false
     @State private var username = ""
     @State private var password = ""
     var body: some View {
@@ -43,8 +45,13 @@ struct LoginView: View {
                 }
                 HStack {
                     Text("아직회원이 아니신가요?")
-                    Button(action: {}) {
+                    Button(action: {
+                        showingSignUp = true
+                    }) {
                         Text("회원가입")
+                    }
+                    .sheet(isPresented: $showingSignUp) {
+                        SignUpView()
                     }
                 }
                 .padding()
@@ -75,9 +82,10 @@ struct LoginView: View {
                 print(dataString)
                 if let decodedResponse = try? JSONDecoder().decode(Token.self, from: data) {
                     token = decodedResponse
-//                    DispatchQueue.main.async {
-//                        result = decodedResponse
-//                    }
+                    if let encoded = try? JSONEncoder().encode(token) {
+                        UserDefaults.standard.set(encoded, forKey: "token")
+                    }
+                    presentationMode.wrappedValue.dismiss()
                     print(token ?? "d")
                     return
                 }

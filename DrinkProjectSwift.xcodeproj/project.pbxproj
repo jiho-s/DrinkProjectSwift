@@ -36,9 +36,12 @@
 		136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A8533244EB48C00DC33B8 /* ToggleRowView.swift */; };
 		137B680F244E7FDF0022E00F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B680E244E7FDF0022E00F /* HomeView.swift */; };
 		137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B6810244E85AC0022E00F /* RectangularButton.swift */; };
+		137BE4122556A48800A2F5EF /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BE4112556A48800A2F5EF /* AddEventView.swift */; };
 		138F97D22546E9AE00EDD7C6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F97D12546E9AE00EDD7C6 /* LoginView.swift */; };
 		138F97D52546E9C600EDD7C6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F97D42546E9C600EDD7C6 /* SignUpView.swift */; };
 		13AA76CA24516518002F5C33 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA76C924516518002F5C33 /* HostingController.swift */; };
+		13C1F3072557CC2400D917C5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F3062557CC2400D917C5 /* CustomButton.swift */; };
+		13C1F30A2557D05E00D917C5 /* EventDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F3092557D05E00D917C5 /* EventDateView.swift */; };
 		DBB074EF89C760AC4048EAF4 /* Pods_DrinkProjectSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1099082CFE8238CE7BC2B0 /* Pods_DrinkProjectSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,9 +78,12 @@
 		136A8533244EB48C00DC33B8 /* ToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRowView.swift; sourceTree = "<group>"; };
 		137B680E244E7FDF0022E00F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		137B6810244E85AC0022E00F /* RectangularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularButton.swift; sourceTree = "<group>"; };
+		137BE4112556A48800A2F5EF /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		138F97D12546E9AE00EDD7C6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		138F97D42546E9C600EDD7C6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		13AA76C924516518002F5C33 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		13C1F3062557CC2400D917C5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		13C1F3092557D05E00D917C5 /* EventDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDateView.swift; sourceTree = "<group>"; };
 		EB1099082CFE8238CE7BC2B0 /* Pods_DrinkProjectSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkProjectSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE834D60817F8EE57FE6DA2F /* Pods-DrinkProjectSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkProjectSwift.debug.xcconfig"; path = "Target Support Files/Pods-DrinkProjectSwift/Pods-DrinkProjectSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +185,7 @@
 				1311D5D224512612007ECC0D /* RectangularNavigationLink.swift */,
 				1311D5C0244FFDA9007ECC0D /* BackgroundStack.swift */,
 				1311D5D824513091007ECC0D /* RectangularToggle.swift */,
+				13C1F3062557CC2400D917C5 /* CustomButton.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -235,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				137B680E244E7FDF0022E00F /* HomeView.swift */,
+				137BE4112556A48800A2F5EF /* AddEventView.swift */,
+				13C1F3092557D05E00D917C5 /* EventDateView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -389,6 +398,7 @@
 				131021EA2456ECEC006E6F3B /* CalendarView.swift in Sources */,
 				131021EE24585B38006E6F3B /* Data.swift in Sources */,
 				1311D5DD2451399B007ECC0D /* TabBarModifier.swift in Sources */,
+				13C1F30A2557D05E00D917C5 /* EventDateView.swift in Sources */,
 				131021D72456A2B9006E6F3B /* JournalView.swift in Sources */,
 				131021EC2457D063006E6F3B /* CalendarModifier.swift in Sources */,
 				1311D5C1244FFDA9007ECC0D /* BackgroundStack.swift in Sources */,
@@ -397,6 +407,7 @@
 				137B680F244E7FDF0022E00F /* HomeView.swift in Sources */,
 				13056609244DA0D40015BC2B /* ProfileImage.swift in Sources */,
 				13056604244D99E20015BC2B /* SettingView.swift in Sources */,
+				13C1F3072557CC2400D917C5 /* CustomButton.swift in Sources */,
 				131021D92456A2D2006E6F3B /* StatisticsView.swift in Sources */,
 				1311D5CD245029AD007ECC0D /* LinearGradient.swift in Sources */,
 				137B6811244E85AC0022E00F /* RectangularButton.swift in Sources */,
@@ -405,6 +416,7 @@
 				138F97D22546E9AE00EDD7C6 /* LoginView.swift in Sources */,
 				130565F3244D94170015BC2B /* ContentView.swift in Sources */,
 				130565EE244D94170015BC2B /* SceneDelegate.swift in Sources */,
+				137BE4122556A48800A2F5EF /* AddEventView.swift in Sources */,
 				136A8534244EB48C00DC33B8 /* ToggleRowView.swift in Sources */,
 				138F97D52546E9C600EDD7C6 /* SignUpView.swift in Sources */,
 				1311D5C92450173A007ECC0D /* View.swift in Sources */,
@@ -477,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -532,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

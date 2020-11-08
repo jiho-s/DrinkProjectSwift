@@ -1,62 +1,48 @@
 //
-//  SignUpView.swift
+//  AddEventView.swift
 //  DrinkProjectSwift
 //
-//  Created by 신지호 on 2020/10/26.
+//  Created by 신지호 on 2020/11/07.
 //  Copyright © 2020 jiho. All rights reserved.
 //
 
 import SwiftUI
 
-class Account: ObservableObject, Encodable {
-    @Published var name = ""
-    @Published var email = ""
-    @Published var password = ""
-    @Published var picture = "123"
-    enum CodingKeys: CodingKey {
-        case name
-        case email
-        case password
-        case picture
+struct AddEventView: View {
+    let drinks = ["와인", "소주", "맥주", "소맥", "위스키", "샴페인"]
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy년 MM월 dd일"
+        return formatter
     }
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(name, forKey: .name)
-        try container.encode(email, forKey: .email)
-        try container.encode(password, forKey: .password)
-        try container.encode(picture, forKey: .picture)
-        }
-}
-
-struct SignUpView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var showingAlert = false
-    @ObservedObject var account = Account()
+    @ObservedObject var eventRequest: EventRequest
     var body: some View {
         ZStack {
-            LinearGradient.background
+            Color.back2
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("회원가입")
+                Text("\(eventRequest.drinkDate, formatter: dateFormatter)")
                     .padding()
                     .font(.largeTitle)
-                TextField("이메일", text: $account.email)
-                    .keyboardType(.emailAddress)
-                    .autocapitalization(.none)
+                TextField("이벤트 명(옵션)", text: $eventRequest.name)
                     .padding()
                 Divider()
-                TextField("비밀번호", text: $account.password)
-                    .keyboardType(.emailAddress)
-                    .autocapitalization(.none)
-                    .padding()
+                Picker(selection: $eventRequest.item, label: Text("술")) {
+                    ForEach(0..<drinks.count) {
+                        Text(self.drinks[$0])
+                    }
+                }
                 Divider()
-                TextField("닉네임", text: $account.name)
-                    .keyboardType(.emailAddress)
-                    .autocapitalization(.none)
+                TextField("잔수", text: $eventRequest.glass)
                     .padding()
+                    .keyboardType(.numberPad)
                 Divider()
-                Button(action: signUp) {
-                    Text("회원가입")
+                Button(action: {
+                    post()
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("저장하기")
                         .padding()
                         .frame(width: 200, alignment: .center)
                         .accentColor(.white)
@@ -64,25 +50,31 @@ struct SignUpView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .padding()
                 }
-
+                
             }
             .fieldStyle()
+            .navigationTitle(Text("이벤트 생성"))
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button("취소") {
+                //
+                presentationMode.wrappedValue.dismiss()
+            })
         }
     }
-    private func signUp() {
-        guard let url = URL(string: baseUrl + "/api/account") else {
+    private func post() {
+        guard let url = URL(string: baseUrl + "/api/event") else {
             print("Invalid URL")
             return
         }
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
-        let encode = try? JSONEncoder().encode(account)
+        let encode = try? JSONEncoder().encode(eventRequest)
+        print(String(decoding: encode!, as: UTF8.self))
         request.httpBody = encode
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             let httpResponse = response as! HTTPURLResponse
             if httpResponse.statusCode == 400 {
-                showingAlert = true
                 return
             }
             if httpResponse.statusCode == 201 {
@@ -99,11 +91,12 @@ struct SignUpView: View {
 
             print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
         }.resume()
+
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct AddEventView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        AddEventView(eventRequest: EventRequest())
     }
 }

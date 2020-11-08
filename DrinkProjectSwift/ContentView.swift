@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showLoginView = false
     var body: some View {
         TabView {
             HomeView()
@@ -32,8 +33,17 @@ struct ContentView: View {
                     Text("설정")
             }
         }
+        .fullScreenCover(isPresented: $showLoginView) {
+            LoginView()
+        }
+        .onAppear(perform: checkLogin)
         .accentColor(.field)
         .tabBarColor()
+    }
+    func checkLogin() {
+        if token == nil {
+            showLoginView = true
+        }
     }
 }
 
