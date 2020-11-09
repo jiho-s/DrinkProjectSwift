@@ -24,16 +24,16 @@ class EventRequest:ObservableObject, Encodable {
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter
     }
-    enum CodingKeys: CodingKey {
-        case glass
-        case item
-        case name
+    enum CodingKeys: String, CodingKey {
+        case glass = "cup"
+        case item = "drinkType"
+        case name = "memo"
         case drinkDate
     }
     func encode(to encoder: Encoder) throws {
         let stringDate = dateFormatter.string(from: drinkDate)
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(Int(glass) , forKey: .glass)
+        try container.encode(glass , forKey: .glass)
         try container.encode(name, forKey: .name)
         try container.encode(item, forKey: .item)
         try container.encode(stringDate, forKey: .drinkDate)

@@ -68,6 +68,7 @@ struct AddEventView: View {
         }
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer " + (token?.access_token ?? ""), forHTTPHeaderField: "Authorization")
         request.httpMethod = "POST"
         let encode = try? JSONEncoder().encode(eventRequest)
         print(String(decoding: encode!, as: UTF8.self))
