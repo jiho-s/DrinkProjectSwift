@@ -1,0 +1,6 @@
+framework module Pods_DrinkProjectSwift {
+  umbrella header "Pods-DrinkProjectSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

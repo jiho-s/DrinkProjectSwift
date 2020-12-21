@@ -8,9 +8,6 @@
 
 import SwiftUI
 struct JournalView: View {
-    @State private var selectedDate = Date()
-    @State private var showDateDetail = false
-    @State private var navigationTitle = ""
     var body: some View {
         NavigationView {
             ZStack {

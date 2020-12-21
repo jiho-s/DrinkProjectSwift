@@ -18,7 +18,6 @@ struct RectangularToggle<Label>: View where Label : View{
     var body: some View {
         Toggle(isOn: isOn, label: label)
             .frame(height: 10)
-            .fieldStyle()
     }
 }
 
